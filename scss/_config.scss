@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Bellefair';
+  src: url('/starter-code/assets/fonts/Bellefair-Regular.woff2') format(woff2),
+       url('/starter-code/assets/fonts/Bellefair-Regular.woff2') format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  src: url('/starter-code/assets/fonts/BarlowCondensed-Bold.woff2') format(woff2),
+  url('/starter-code/assets/fonts/BarlowCondensed-Bold.woff') format(woff);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  src: url('/starter-code/assets/fonts/BarlowCondensed-Regular.woff2') format(woff2),
+       url('/starter-code/assets/fonts/BarlowCondensed-Regular.woff') format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin heading-1 {
+  font-size: 5.7rem;
+  color: $base-color;
+  text-transform: uppercase;
+  font-family: 'Bellefair';
+
+  @media (width >= 40em) and (width <= 61.99em) {
+    font-size: 9.375rem;
+  }
+  
+  @media (width > 62em) {
+    font-size: 9.375rem;
+  }
+}
+
+@mixin heading-2 {
+  font-size: 6.25rem;
+  color: $base-color;
+  text-transform: uppercase;
+  font-family: 'Bellefair';
+}
+
+@mixin heading-3{
+  font-size: 3.5rem;
+  color: $base-color;
+  text-transform: uppercase;
+  font-family: 'Bellefair';
+}
+
+@mixin heading-4{
+  font-size: 2rem;
+  color: $base-color;
+  text-transform: uppercase;
+  font-family: 'Bellefair';
+}
+
+@mixin heading-5{
+  font-size: 1rem;
+  letter-spacing: 4.75px;
+  color: $secordary-color;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed';
+
+  @media (width >= 40em) and (width <= 61.99em) {
+    font-size: 1.75rem;
+  }
+  
+  @media (width > 62em) {
+    font-size: 1.75rem;
+  }
+}
+
+@mixin sub-heading-1 {
+  font-size: 1.75rem;
+  color: $base-color;
+  text-transform: uppercase;
+  font-family: 'Bellefair';
+}
+
+@mixin sub-heading-2 {
+  font-size: 0.875rem;
+  letter-spacing: 2.35px;
+  color: $secordary-color;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed';
+}
+
+@mixin nav-text {
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+  color: $secordary-color;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed';
+}
+
+@mixin body-text {
+  font-size: 1.125rem;
+  color: $secordary-color;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$base-color: #FFFFFF;
+$primary-color: #0B0D17;
+$secordary-color: #D0D6F9;
+$stroke: #979797;
+
+
+.container h1 {
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: $base-color;
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+  font-family: 'Barlow Condensed';
+
+  @media (width >= 40em) and (width <= 61.99em) {
+    text-align: left;
+    padding-left: 2.4rem;
+    margin: 2.5rem 0 3.75rem;
+    font-size: 1.25rem;
+    letter-spacing: 3.38px;
+  }
+
+  @media (width > 62em) {
+    text-align: left;
+    padding-left: 10.4rem;
+    margin: 4.8rem 0 4rem;
+    font-size: 1.75rem;
+  }
+
+  span {
+    color: $secordary-color;
+  }
+}

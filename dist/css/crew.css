@@ -1,0 +1,483 @@
+@font-face {
+  font-family: "Bellefair";
+  src: url("/starter-code/assets/fonts/Bellefair-Regular.woff2") format(woff2), url("/starter-code/assets/fonts/Bellefair-Regular.woff2") format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/starter-code/assets/fonts/BarlowCondensed-Bold.woff2") format(woff2), url("/starter-code/assets/fonts/BarlowCondensed-Bold.woff") format(woff);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/starter-code/assets/fonts/BarlowCondensed-Regular.woff2") format(woff2), url("/starter-code/assets/fonts/BarlowCondensed-Regular.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+  font-family: "Barlow Condensed";
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .container h1 {
+    text-align: left;
+    padding-left: 2.4rem;
+    margin: 2.5rem 0 3.75rem;
+    font-size: 1.25rem;
+    letter-spacing: 3.38px;
+  }
+}
+@media (width > 62em) {
+  .container h1 {
+    text-align: left;
+    padding-left: 10.4rem;
+    margin: 4.8rem 0 4rem;
+    font-size: 1.75rem;
+  }
+}
+.container h1 span {
+  color: #D0D6F9;
+}
+
+@font-face {
+  font-family: "Bellefair";
+  src: url("/starter-code/assets/fonts/Bellefair-Regular.woff2") format(woff2), url("/starter-code/assets/fonts/Bellefair-Regular.woff2") format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/starter-code/assets/fonts/BarlowCondensed-Bold.woff2") format(woff2), url("/starter-code/assets/fonts/BarlowCondensed-Bold.woff") format(woff);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/starter-code/assets/fonts/BarlowCondensed-Regular.woff2") format(woff2), url("/starter-code/assets/fonts/BarlowCondensed-Regular.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+  font-family: "Barlow Condensed";
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .container h1 {
+    text-align: left;
+    padding-left: 2.4rem;
+    margin: 2.5rem 0 3.75rem;
+    font-size: 1.25rem;
+    letter-spacing: 3.38px;
+  }
+}
+@media (width > 62em) {
+  .container h1 {
+    text-align: left;
+    padding-left: 10.4rem;
+    margin: 4.8rem 0 4rem;
+    font-size: 1.75rem;
+  }
+}
+.container h1 span {
+  color: #D0D6F9;
+}
+
+header {
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  width: 100%;
+  position: relative;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header nav {
+    padding: 0 0 0 2.4375rem;
+  }
+}
+@media (width > 62em) {
+  header nav {
+    margin-top: 2.5rem;
+    padding: 0 0 0 3.4375rem;
+  }
+}
+
+header nav hr {
+  display: none;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header nav hr {
+    display: none;
+  }
+}
+@media (width > 62em) {
+  header nav hr {
+    display: block;
+    position: absolute;
+    left: 10.4rem;
+    top: 2.2rem;
+    width: 18.6rem;
+    border: 1px solid #FFFFFF;
+  }
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  -moz-column-gap: 3.7rem;
+       column-gap: 3.7rem;
+  list-style: none;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header nav ul {
+    flex-direction: row;
+    width: 28.125rem;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 3.7rem;
+         column-gap: 3.7rem;
+    background-color: #D0D6F9;
+  }
+}
+@media (width > 62em) {
+  header nav ul {
+    flex-direction: row;
+    width: 44.875rem;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 3.7rem;
+         column-gap: 3.7rem;
+    background-color: #D0D6F9;
+  }
+}
+
+header nav li {
+  padding: 1.7rem 0;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header nav li {
+    padding: 2.4rem 0;
+  }
+}
+
+.home-link.active {
+  border-bottom: 4px solid #FFFFFF;
+  padding: 0 0.6rem 1.5rem;
+}
+
+header nav li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed";
+}
+
+header span {
+  margin-right: 0.3rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header span {
+    display: none;
+  }
+}
+
+header nav .hamburger-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header nav .hamburger-btn {
+    display: none;
+  }
+}
+@media (width > 62em) {
+  header nav .hamburger-btn {
+    display: none;
+  }
+}
+
+.menu-nav .close-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-block-end: 7.4rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .menu-nav .close-btn {
+    display: none;
+  }
+}
+@media (width > 62em) {
+  .menu-nav .close-btn {
+    display: none;
+  }
+}
+
+@media (width < 40em) {
+  .menu-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 15.9rem;
+    background-color: blue;
+    padding: 2.1rem 2rem 0;
+    display: none;
+  }
+}
+.show-menu {
+  display: block;
+}
+
+body {
+  background-image: url("/starter-code/assets/crew/background-crew-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  body {
+    background-image: url("/starter-code/assets/crew/background-crew-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+}
+@media (width > 62em) {
+  body {
+    background-image: url("/starter-code/assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+}
+
+main {
+  position: relative;
+}
+
+.crew-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .crew-slide {
+    flex-direction: column-reverse;
+  }
+}
+@media (width > 62em) {
+  .crew-slide {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 0 0 0 10.3rem;
+    align-items: center;
+    height: 45rem;
+  }
+}
+
+.swiper-pagination {
+  background-color: brown;
+  float: left;
+  margin-bottom: 2rem;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: white;
+}
+
+@media (width > 62em) {
+  .crew-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.img-douglas {
+  width: 11.07rem;
+  height: 13.88rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .img-douglas {
+    width: 28.52rem;
+    height: 35.75rem;
+  }
+}
+@media (width > 62em) {
+  .img-douglas {
+    width: 35.5rem;
+    height: 44.5rem;
+  }
+}
+
+.img-mark {
+  width: 9.62rem;
+  height: 13.88rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .img-mark {
+    width: 23.05rem;
+    height: 33.25rem;
+  }
+}
+@media (width > 62em) {
+  .img-mark {
+    width: 28.34rem;
+    height: 40.88rem;
+  }
+}
+
+.img-victor {
+  width: 11.3rem;
+  height: 13.88rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .img-victor {
+    width: 27.07rem;
+    height: 33.25rem;
+  }
+}
+@media (width > 62em) {
+  .img-victor {
+    width: 34.65rem;
+    height: 42.56rem;
+  }
+}
+
+.img-anousheh {
+  width: 14.13rem;
+  height: 13.93rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .img-anousheh {
+    width: 33.72rem;
+    height: 33.25rem;
+  }
+}
+@media (width > 62em) {
+  .img-anousheh {
+    width: 38.47rem;
+    height: 37.94rem;
+  }
+}
+
+.crew-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.63rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .crew-content {
+    row-gap: 2.75rem;
+  }
+}
+@media (width > 62em) {
+  .crew-content {
+    text-align: left;
+    align-items: start;
+    margin-top: unset;
+    margin-right: 38rem;
+  }
+}
+
+.crew-content h3 {
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Bellefair";
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .crew-content h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (width > 62em) {
+  .crew-content h3 {
+    font-size: 2rem;
+  }
+}
+
+.crew-content h2 {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Bellefair";
+  padding-top: 0.6rem;
+  margin-bottom: 1rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .crew-content h2 {
+    padding-top: 1rem;
+    font-size: 2.5rem;
+  }
+}
+@media (width > 62em) {
+  .crew-content h2 {
+    font-size: 2.3rem;
+    padding-top: 0.69rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+.crew-content p {
+  font-size: 0.94rem;
+  color: #D0D6F9;
+  font-family: "Barlow Condensed";
+  width: 21.4rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .crew-content p {
+    width: 29.6rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-bottom: 6.1rem;
+  }
+}
+@media (width > 62em) {
+  .crew-content p {
+    font-size: 1.13rem;
+    line-height: 2rem;
+    width: 27.42499rem;
+  }
+}/*# sourceMappingURL=crew.css.map */

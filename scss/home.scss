@@ -1,0 +1,123 @@
+@import './config';
+@import './header';
+
+body {
+  background-image: url('/starter-code/assets/home/background-home-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  @media (width >= 40em) and (width <= 61.99em) {
+    background-image: url('/starter-code/assets/home/background-home-tablet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  @media (width > 62em) {
+    background-image: url('/starter-code/assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+}
+
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 10rem;
+  margin: 7rem 0 3rem;
+
+  @media (width >= 40em) and (width <= 61.99em) {
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 10rem;
+    margin: 13rem 0 8.2rem;
+  }
+
+  @media (width > 62em) {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    margin: 15.6875rem 0 5.6rem;
+    padding: 0 9rem;
+  }
+}
+
+.span {
+  @include heading-5;
+}
+
+h1 {
+  @include heading-1;
+  margin: .8rem 0 1.8rem;
+}
+
+p {
+  @include body-text;
+  line-height: 2.1rem;
+  margin-top: 1rem;
+  @media (width >= 40em) and (width <= 61.99em) {
+    margin-top: unset;
+  }
+  
+  @media (width > 62em) {
+  line-height: unset;
+  margin-top: unset;
+  }
+}
+
+
+.content {
+  width: 23rem;
+  text-align: center;
+  @media (width >= 40em) and (width <= 61.99em) {
+    width: 29.75em;
+  }
+  
+  @media (width > 62em) {
+    width: 27rem;
+    text-align: left;
+  }
+}
+
+
+.circle-btn {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50rem;
+  background-color: $base-color;
+  color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-family: 'Bellefair';
+  border: none;
+  cursor: pointer;
+
+  @media (width > 62em) {
+    width: 17.2rem;
+    height: 17.2rem;
+    font-size: 2rem;
+  }
+}
+
+.circle-side:hover {
+  width: 28.125rem;
+  height: 28.125rem;
+  background-color: $stroke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50rem;
+  border: none;
+}
+
+.circle-side p {
+  color: $primary-color;
+}

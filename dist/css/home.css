@@ -1,0 +1,420 @@
+@font-face {
+  font-family: "Bellefair";
+  src: url("/starter-code/assets/fonts/Bellefair-Regular.woff2") format(woff2), url("/starter-code/assets/fonts/Bellefair-Regular.woff2") format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/starter-code/assets/fonts/BarlowCondensed-Bold.woff2") format(woff2), url("/starter-code/assets/fonts/BarlowCondensed-Bold.woff") format(woff);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/starter-code/assets/fonts/BarlowCondensed-Regular.woff2") format(woff2), url("/starter-code/assets/fonts/BarlowCondensed-Regular.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+  font-family: "Barlow Condensed";
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .container h1 {
+    text-align: left;
+    padding-left: 2.4rem;
+    margin: 2.5rem 0 3.75rem;
+    font-size: 1.25rem;
+    letter-spacing: 3.38px;
+  }
+}
+@media (width > 62em) {
+  .container h1 {
+    text-align: left;
+    padding-left: 10.4rem;
+    margin: 4.8rem 0 4rem;
+    font-size: 1.75rem;
+  }
+}
+.container h1 span {
+  color: #D0D6F9;
+}
+
+@font-face {
+  font-family: "Bellefair";
+  src: url("/starter-code/assets/fonts/Bellefair-Regular.woff2") format(woff2), url("/starter-code/assets/fonts/Bellefair-Regular.woff2") format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/starter-code/assets/fonts/BarlowCondensed-Bold.woff2") format(woff2), url("/starter-code/assets/fonts/BarlowCondensed-Bold.woff") format(woff);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/starter-code/assets/fonts/BarlowCondensed-Regular.woff2") format(woff2), url("/starter-code/assets/fonts/BarlowCondensed-Regular.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+  font-family: "Barlow Condensed";
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .container h1 {
+    text-align: left;
+    padding-left: 2.4rem;
+    margin: 2.5rem 0 3.75rem;
+    font-size: 1.25rem;
+    letter-spacing: 3.38px;
+  }
+}
+@media (width > 62em) {
+  .container h1 {
+    text-align: left;
+    padding-left: 10.4rem;
+    margin: 4.8rem 0 4rem;
+    font-size: 1.75rem;
+  }
+}
+.container h1 span {
+  color: #D0D6F9;
+}
+
+header {
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  width: 100%;
+  position: relative;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header nav {
+    padding: 0 0 0 2.4375rem;
+  }
+}
+@media (width > 62em) {
+  header nav {
+    margin-top: 2.5rem;
+    padding: 0 0 0 3.4375rem;
+  }
+}
+
+header nav hr {
+  display: none;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header nav hr {
+    display: none;
+  }
+}
+@media (width > 62em) {
+  header nav hr {
+    display: block;
+    position: absolute;
+    left: 10.4rem;
+    top: 2.2rem;
+    width: 18.6rem;
+    border: 1px solid #FFFFFF;
+  }
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  -moz-column-gap: 3.7rem;
+       column-gap: 3.7rem;
+  list-style: none;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header nav ul {
+    flex-direction: row;
+    width: 28.125rem;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 3.7rem;
+         column-gap: 3.7rem;
+    background-color: #D0D6F9;
+  }
+}
+@media (width > 62em) {
+  header nav ul {
+    flex-direction: row;
+    width: 44.875rem;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 3.7rem;
+         column-gap: 3.7rem;
+    background-color: #D0D6F9;
+  }
+}
+
+header nav li {
+  padding: 1.7rem 0;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header nav li {
+    padding: 2.4rem 0;
+  }
+}
+
+.home-link.active {
+  border-bottom: 4px solid #FFFFFF;
+  padding: 0 0.6rem 1.5rem;
+}
+
+header nav li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed";
+}
+
+header span {
+  margin-right: 0.3rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header span {
+    display: none;
+  }
+}
+
+header nav .hamburger-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header nav .hamburger-btn {
+    display: none;
+  }
+}
+@media (width > 62em) {
+  header nav .hamburger-btn {
+    display: none;
+  }
+}
+
+.menu-nav .close-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-block-end: 7.4rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .menu-nav .close-btn {
+    display: none;
+  }
+}
+@media (width > 62em) {
+  .menu-nav .close-btn {
+    display: none;
+  }
+}
+
+@media (width < 40em) {
+  .menu-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 15.9rem;
+    background-color: blue;
+    padding: 2.1rem 2rem 0;
+    display: none;
+  }
+}
+.show-menu {
+  display: block;
+}
+
+body {
+  background-image: url("/starter-code/assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  body {
+    background-image: url("/starter-code/assets/home/background-home-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+}
+@media (width > 62em) {
+  body {
+    background-image: url("/starter-code/assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 10rem;
+  margin: 7rem 0 3rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .home-container {
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 10rem;
+    margin: 13rem 0 8.2rem;
+  }
+}
+@media (width > 62em) {
+  .home-container {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    margin: 15.6875rem 0 5.6rem;
+    padding: 0 9rem;
+  }
+}
+
+.span {
+  font-size: 1rem;
+  letter-spacing: 4.75px;
+  color: #D0D6F9;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed";
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .span {
+    font-size: 1.75rem;
+  }
+}
+@media (width > 62em) {
+  .span {
+    font-size: 1.75rem;
+  }
+}
+
+h1 {
+  font-size: 5.7rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Bellefair";
+  margin: 0.8rem 0 1.8rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  h1 {
+    font-size: 9.375rem;
+  }
+}
+@media (width > 62em) {
+  h1 {
+    font-size: 9.375rem;
+  }
+}
+
+p {
+  font-size: 1.125rem;
+  color: #D0D6F9;
+  line-height: 2.1rem;
+  margin-top: 1rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  p {
+    margin-top: unset;
+  }
+}
+@media (width > 62em) {
+  p {
+    line-height: unset;
+    margin-top: unset;
+  }
+}
+
+.content {
+  width: 23rem;
+  text-align: center;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .content {
+    width: 29.75em;
+  }
+}
+@media (width > 62em) {
+  .content {
+    width: 27rem;
+    text-align: left;
+  }
+}
+
+.circle-btn {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50rem;
+  background-color: #FFFFFF;
+  color: #0B0D17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-family: "Bellefair";
+  border: none;
+  cursor: pointer;
+}
+@media (width > 62em) {
+  .circle-btn {
+    width: 17.2rem;
+    height: 17.2rem;
+    font-size: 2rem;
+  }
+}
+
+.circle-side:hover {
+  width: 28.125rem;
+  height: 28.125rem;
+  background-color: #979797;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50rem;
+  border: none;
+}
+
+.circle-side p {
+  color: #0B0D17;
+}/*# sourceMappingURL=home.css.map */

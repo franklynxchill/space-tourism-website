@@ -1,0 +1,484 @@
+@font-face {
+  font-family: "Bellefair";
+  src: url("/starter-code/assets/fonts/Bellefair-Regular.woff2") format(woff2), url("/starter-code/assets/fonts/Bellefair-Regular.woff2") format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/starter-code/assets/fonts/BarlowCondensed-Bold.woff2") format(woff2), url("/starter-code/assets/fonts/BarlowCondensed-Bold.woff") format(woff);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/starter-code/assets/fonts/BarlowCondensed-Regular.woff2") format(woff2), url("/starter-code/assets/fonts/BarlowCondensed-Regular.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+  font-family: "Barlow Condensed";
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .container h1 {
+    text-align: left;
+    padding-left: 2.4rem;
+    margin: 2.5rem 0 3.75rem;
+    font-size: 1.25rem;
+    letter-spacing: 3.38px;
+  }
+}
+@media (width > 62em) {
+  .container h1 {
+    text-align: left;
+    padding-left: 10.4rem;
+    margin: 4.8rem 0 4rem;
+    font-size: 1.75rem;
+  }
+}
+.container h1 span {
+  color: #D0D6F9;
+}
+
+@font-face {
+  font-family: "Bellefair";
+  src: url("/starter-code/assets/fonts/Bellefair-Regular.woff2") format(woff2), url("/starter-code/assets/fonts/Bellefair-Regular.woff2") format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/starter-code/assets/fonts/BarlowCondensed-Bold.woff2") format(woff2), url("/starter-code/assets/fonts/BarlowCondensed-Bold.woff") format(woff);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/starter-code/assets/fonts/BarlowCondensed-Regular.woff2") format(woff2), url("/starter-code/assets/fonts/BarlowCondensed-Regular.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+  font-family: "Barlow Condensed";
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .container h1 {
+    text-align: left;
+    padding-left: 2.4rem;
+    margin: 2.5rem 0 3.75rem;
+    font-size: 1.25rem;
+    letter-spacing: 3.38px;
+  }
+}
+@media (width > 62em) {
+  .container h1 {
+    text-align: left;
+    padding-left: 10.4rem;
+    margin: 4.8rem 0 4rem;
+    font-size: 1.75rem;
+  }
+}
+.container h1 span {
+  color: #D0D6F9;
+}
+
+header {
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  width: 100%;
+  position: relative;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header nav {
+    padding: 0 0 0 2.4375rem;
+  }
+}
+@media (width > 62em) {
+  header nav {
+    margin-top: 2.5rem;
+    padding: 0 0 0 3.4375rem;
+  }
+}
+
+header nav hr {
+  display: none;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header nav hr {
+    display: none;
+  }
+}
+@media (width > 62em) {
+  header nav hr {
+    display: block;
+    position: absolute;
+    left: 10.4rem;
+    top: 2.2rem;
+    width: 18.6rem;
+    border: 1px solid #FFFFFF;
+  }
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  -moz-column-gap: 3.7rem;
+       column-gap: 3.7rem;
+  list-style: none;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header nav ul {
+    flex-direction: row;
+    width: 28.125rem;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 3.7rem;
+         column-gap: 3.7rem;
+    background-color: #D0D6F9;
+  }
+}
+@media (width > 62em) {
+  header nav ul {
+    flex-direction: row;
+    width: 44.875rem;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 3.7rem;
+         column-gap: 3.7rem;
+    background-color: #D0D6F9;
+  }
+}
+
+header nav li {
+  padding: 1.7rem 0;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header nav li {
+    padding: 2.4rem 0;
+  }
+}
+
+.home-link.active {
+  border-bottom: 4px solid #FFFFFF;
+  padding: 0 0.6rem 1.5rem;
+}
+
+header nav li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed";
+}
+
+header span {
+  margin-right: 0.3rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header span {
+    display: none;
+  }
+}
+
+header nav .hamburger-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  header nav .hamburger-btn {
+    display: none;
+  }
+}
+@media (width > 62em) {
+  header nav .hamburger-btn {
+    display: none;
+  }
+}
+
+.menu-nav .close-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-block-end: 7.4rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .menu-nav .close-btn {
+    display: none;
+  }
+}
+@media (width > 62em) {
+  .menu-nav .close-btn {
+    display: none;
+  }
+}
+
+@media (width < 40em) {
+  .menu-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 15.9rem;
+    background-color: blue;
+    padding: 2.1rem 2rem 0;
+    display: none;
+  }
+}
+.show-menu {
+  display: block;
+}
+
+body {
+  background-image: url("/starter-code/assets/destination/background-destination-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  body {
+    background-image: url("/starter-code/assets/destination/background-destination-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+}
+@media (width > 62em) {
+  body {
+    background-image: url("/starter-code/assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+}
+
+.destination-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (width > 62em) {
+  .destination-cover {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12.4rem 0 10.2rem;
+    margin-bottom: 7.4rem;
+    -moz-column-gap: 9.8rem;
+         column-gap: 9.8rem;
+  }
+}
+
+.destination-img {
+  width: 10.6rem;
+  height: 10.6rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .destination-img {
+    width: 18.75rem;
+    height: 18.75rem;
+  }
+}
+@media (width > 62em) {
+  .destination-img {
+    width: 27.8rem;
+    height: 27.8rem;
+  }
+}
+.destination-img img {
+  width: 100%;
+}
+
+.destination-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.6rem 1.5rem;
+}
+@media (width > 62em) {
+  .destination-content {
+    text-align: left;
+    justify-content: start;
+    align-items: start;
+    width: 18.75rem;
+    padding: unset;
+  }
+}
+
+.destination-content nav ul {
+  display: flex;
+  -moz-column-gap: 1.4rem;
+       column-gap: 1.4rem;
+  list-style: none;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .destination-content nav ul {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}
+@media (width > 62em) {
+  .destination-content nav ul {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}
+
+.destination-link.active {
+  padding: 0 0.2rem 0.69rem;
+  border-bottom: 4px solid #FFFFFF;
+}
+
+.destination-content nav a {
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+  color: #D0D6F9;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed";
+  text-decoration: none;
+}
+
+.destination-content h2 {
+  font-size: 3.5rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Bellefair";
+  margin-top: 1.3rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .destination-content h2 {
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    font-size: 5rem;
+  }
+}
+@media (width > 62em) {
+  .destination-content h2 {
+    margin-top: 2rem;
+    padding-bottom: 0.48rem;
+    font-size: 6.3rem;
+  }
+}
+
+.destination-content p {
+  font-size: 0.94rem;
+  color: #D0D6F9;
+  font-family: "Barlow Condensed";
+  width: 20.4rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 2rem;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .destination-content p {
+    width: 35.8rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    padding-bottom: 3rem;
+    letter-spacing: 1.5px;
+  }
+}
+@media (width > 62em) {
+  .destination-content p {
+    font-size: 1.13rem;
+    line-height: 2rem;
+    width: 27.8rem;
+    padding-bottom: 2.4rem;
+  }
+}
+
+.destination-content hr {
+  width: 20rem;
+  border: 1px solid #D0D6F9;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .destination-content hr {
+    width: 27.8rem;
+  }
+}
+@media (width > 62em) {
+  .destination-content hr {
+    width: 27.8rem;
+  }
+}
+
+.destination-content .stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 2rem;
+  padding: 2.1rem 0 0 0;
+}
+@media (width >= 40em) and (width <= 61.99em) {
+  .destination-content .stats {
+    flex-direction: row;
+    justify-content: center;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+    padding: 2rem 0 0 0;
+  }
+}
+@media (width > 62em) {
+  .destination-content .stats {
+    flex-direction: row;
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+    padding: 2rem 0 0 0;
+    text-align: left;
+    width: 27.8rem;
+  }
+}
+
+.stats span {
+  font-size: 0.875rem;
+  letter-spacing: 2.35px;
+  color: #D0D6F9;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed";
+  letter-spacing: 2.36px;
+}
+
+.stats h3 {
+  font-size: 1.75rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Bellefair";
+  margin-top: 0.6rem;
+}/*# sourceMappingURL=destination.css.map */

@@ -1,0 +1,136 @@
+@import './config';
+
+header {
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  width: 100%;
+  position: relative;
+
+  @media (width >= 40em) and (width <= 61.99em) {
+    padding: 0 0 0 2.4375rem;
+  }
+
+  @media (width > 62em) {
+    margin-top: 2.5rem;
+    padding: 0 0 0 3.4375rem;
+  }
+}
+
+header nav hr {
+  display: none;
+  @media (width >= 40em) and (width <= 61.99em) {
+    display: none;
+  }
+  @media (width > 62em) {
+    display: block;
+    position: absolute;
+    left: 10.4rem;
+    top: 2.2rem;
+    width: 18.6rem;
+    border: 1px solid $base-color;
+  }
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  column-gap: 3.7rem;
+  list-style: none;
+
+  @media (width >= 40em) and (width <= 61.99em) {
+    flex-direction: row;
+    width: 28.125rem;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3.7rem;
+    background-color: #D0D6F9;
+  }
+
+  @media (width > 62em) {
+    flex-direction: row;
+    width: 44.875rem;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3.7rem;
+    background-color: #D0D6F9;
+  }
+}
+
+header nav li {
+  padding: 1.7rem 0;
+  
+  @media (width >= 40em) and (width <= 61.99em) {
+    padding: 2.4rem 0;
+  }
+}
+
+.home-link.active {
+  border-bottom: 4px solid $base-color; 
+  padding: 0 .6rem 1.5rem;
+}
+
+header nav li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: $base-color;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed';
+}
+
+header span {
+  margin-right: .3rem;
+  @media (width >= 40em) and (width <= 61.99em) {
+    display: none;
+  }
+}
+
+header nav .hamburger-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  @media (width >= 40em) and (width <= 61.99em) {
+    display: none;
+  }
+  @media (width > 62em) {
+    display: none;
+  }
+}
+
+.menu-nav .close-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-block-end: 7.4rem;
+  @media (width >= 40em) and (width <= 61.99em) {
+    display: none;
+  }
+  @media (width > 62em) {
+    display: none;
+  }
+}
+
+@media (width < 40em)  {
+  .menu-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 15.9rem;
+    background-color: blue;
+    padding: 2.1rem 2rem 0; 
+    display: none;
+  }
+}
+
+.show-menu {
+  display: block;
+}
